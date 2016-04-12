@@ -8,23 +8,14 @@
     }
 }
 
-#platui {
-    #grid {
-        @base-percent: 100%;
-        @num-columns: 12;
-        @column-padding: 0px;
-    }
-}
-
-#hero {
+#banner {
             text-align: center;
             width: 100%;
-            border: 2px solid black;
+            position: relative;
 }
 
 #bannerpic {
             width: 100%;
-            position: relative;
 }
 
 @font-face {
@@ -36,7 +27,53 @@
             position: absolute;
             z-index: 100;
             color: white;
-            font-family: work sans extra light;
+            font-family: WorkSans-ExtraLight;
+            margin: 400px 40%;  
+}
+
+@font-face {
+            font-family: roboto boldcondensed;
+            src: url(fonts/Roboto/Roboto-BoldCondensed.otf);
+}
+@font-face {
+            font-family: work sans extrabold;
+            src: url(fonts/WorkSans/WorkSans-ExtraBold.otf);
+}
+
+#promo {    
+            // position: relative;
+}
+
+#promoText {
+            float: left;
+            width: 50%;
+            text-align: left;
+            // margin-left: 7%;
+            border: 2px solid black;
+            // position: absolute;
             
             
+    #line1 {
+            font-family: Roboto-BoldCondensed;
+            color: grey;
+            margin-top: 7%;
+            font-size: 1.45em;
+            margin-left: 7%;
+
+    }
+    #line2 {
+            font-family: WorkSans-ExtraBold;
+            color: #29ba92;
+            font-size: 3em;
+            margin-top: 2%;
+            margin-left: 7%;
+    }      
+}
+
+#promoPic {
+           width: 50%;
+           float: right;
+           text-align: left;
+           border: 2px solid black;
+        //    position: absolute;
 }
