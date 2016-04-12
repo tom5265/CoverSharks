@@ -64,7 +64,7 @@
             padding: 0.2em 0;
             text-transform: uppercase;
             text-align: center;
-            font-family: WorkSans-ExtraBold;
+            font-family: WorkSans-ExtraBold, sans-serif;
             letter-spacing: 0.05em;
         }
         .phone {
@@ -89,6 +89,7 @@
             position: absolute;
             bottom: 0;
             left: 3em;
+            max-width: 100%;
         }
         .second {
             background-color: #fff;
@@ -99,11 +100,15 @@
             .cooler-watch {
                 position: absolute;
                 top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+                transform: translateY(-50%);
+                width: 100%;
+                text-align: right;
+                padding-right: 2em;
                 img {
                     height: 22em;
-                    width: 30em;
+                    width: 100%;
+                    max-width: 30em;
+                    // padding-bottom: 26.7%;
                 }
             }
         }
@@ -142,7 +147,7 @@
                 height: 3em;
                 width: 11em;   
                 margin-top: 1.2em;
-                font-family: Roboto-Condensed;
+                font-family: Roboto-Condensed, sans-serif;
                 letter-spacing: 0.15em;
                 margin-top: 0.5em;            
             }
@@ -155,14 +160,14 @@
             
             h1 {
                 color: #2f88b2;
-                width: 75%;
+                width: 70%;
                 margin: 0 auto;
                 line-height: 1;
                 font-family: WorkSans-ExtraBold, sans-serif;
             }
             p {
                 color: #fffffe;
-                width: 75%;
+                width: 55%;
                 margin: 0 auto;
                 padding: 1.5em 0;
                 font-family: WorkSans-Regular, sans-serif;
@@ -179,10 +184,10 @@
             }
         }
         .diagonal-phone {
-            text-align: left;
             img {
                 height: 28em;
                 width: 25em;
+                max-width: 100%;
             }
         }
     }
