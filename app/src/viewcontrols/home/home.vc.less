@@ -64,7 +64,7 @@
             padding: 0.2em 0;
             text-transform: uppercase;
             text-align: center;
-            font-family: WorkSans-ExtraBold;
+            font-family: WorkSans-ExtraBold, sans-serif;
             letter-spacing: 0.05em;
         }
         .phone {
@@ -89,6 +89,7 @@
             position: absolute;
             bottom: 0;
             left: 3em;
+            max-width: 100%;
         }
         .second {
             background-color: #fff;
@@ -99,11 +100,15 @@
             .cooler-watch {
                 position: absolute;
                 top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+                transform: translateY(-50%);
+                width: 100%;
+                text-align: right;
+                padding-right: 2em;
                 img {
                     height: 22em;
-                    width: 30em;
+                    width: 100%;
+                    max-width: 30em;
+                    // padding-bottom: 26.7%;
                 }
             }
         }
@@ -142,29 +147,37 @@
                 height: 3em;
                 width: 11em;   
                 margin-top: 1.2em;
-                font-family: Roboto-Condensed;
+                font-family: Roboto-Condensed, sans-serif;
                 letter-spacing: 0.15em;
                 margin-top: 0.5em;            
             }
         }
-        .third {
-            background-color: #182144;
+        .blue-backgrnd {
+            background-image: url('../../images/home/bkgrnd.svg');
+            background-size: cover;
         }
         .text-msg {
-            text-align: center;
-            
+            height: 28em;
+            .text-msg-data {
+                text-align: center;
+                width: 80%;
+                float: right;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+
+            }
             h1 {
+                padding: 0;
                 color: #2f88b2;
-                width: 75%;
-                margin: 0 auto;
                 line-height: 1;
                 font-family: WorkSans-ExtraBold, sans-serif;
+                margin: 0;
             }
             p {
                 color: #fffffe;
-                width: 75%;
-                margin: 0 auto;
                 padding: 1.5em 0;
+                margin: 0;
                 font-family: WorkSans-Regular, sans-serif;
             }
             .white-btn {
@@ -179,10 +192,99 @@
             }
         }
         .diagonal-phone {
-            text-align: left;
+            height: 28em;
             img {
-                height: 28em;
+                height: 27em;
                 width: 25em;
+                max-width: 100%;
+
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+
+            }
+        }
+        .gameplay-overview {
+            background-color: #f2f1f1;
+            text-align: center;
+            padding: 2em 0;
+            h2 {
+                font-family: WorkSans-ExtraBold, sans-serif;
+                text-transform: uppercase;
+                color: #318bb6;
+                padding: 0;
+                letter-spacing: 0.05em;
+            }
+            img {
+                height: 8em;
+                width: 15em;
+            }
+            .right-box {
+                float: right;
+            }
+            .left-box {
+                float: left;
+            }
+            .white-box {
+                border-right: 2px solid #9e9f9e;
+                border-bottom: 2px solid #9e9f9e;
+                border-radius: 0.4em;
+                background-color: #fffffe;
+                height: 19em;
+                width: 17em;
+                display: inline-block;
+                h5 {
+                    font-family: Roboto-BoldCondensed, sans-serif;
+                }
+                p {
+                    font-family: WorkSans-Regular;
+                }
+            }
+            .bottom-info {
+                h4 {
+                    color: #2f88b2;
+                    font-family: Roboto-BoldCondensed, sans-serif;
+                    margin-top: 1em;
+                    margin-bottom: 0;
+                }
+            }
+            .subscribe-btn {
+                background-color: #343434;
+                text-transform: uppercase;
+                border: none;
+                border-radius: 0.5em;
+                color: #e4e4e3;
+                height: 3em;
+                width: 11em;   
+                margin-top: 1.2em;
+                font-family: Roboto-Condensed, sans-serif;
+                letter-spacing: 0.15em;
+                margin-top: 0.5em; 
+            }
+            .subscriber {
+                border-radius: 0.5em;
+                height: 2em;
+                width: 35em;
+                margin: 1em 0;
+            }
+            ::-webkit-input-placeholder {
+                 color: #b4b5b4;
+                 text-align: center;
+            }
+
+            :-moz-placeholder { /* Firefox 18- */
+                 color: #b4b5b4;  
+                 text-align: center;
+            }
+
+            ::-moz-placeholder {  /* Firefox 19+ */
+                 color: #b4b5b4; 
+                 text-align: center;
+            }
+
+            :-ms-input-placeholder {  
+                 color: #b4b5b4; 
+                 text-align: center; 
             }
         }
     }
