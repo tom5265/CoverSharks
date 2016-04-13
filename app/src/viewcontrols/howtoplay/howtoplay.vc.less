@@ -24,14 +24,17 @@
 }
 
 @font-face {
+    font-family: "Roboto-BoldCondensed";
+    src: url("../../fonts/Roboto/Roboto-BoldCondensed.ttf")
+}
+
+@font-face {
     font-family: "Roboto-Condensed";
     src: url("../../fonts/Roboto/Roboto-Condensed.ttf")
 }
 
 .main-container {
     background-color: #dedede;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
 }
 
 .howtoplay-main{
@@ -52,14 +55,157 @@
     background-position: center center;
 }
 
+.tab-container {
+    text-align: center;
+    border-bottom: #a6a8ab 2px solid;
+    height: 3.5em;
+    background-color: white;
+}
+.tab {
+    border: none;
+    height: 3.4em;
+    width: 10em;
+    background-color: white;
+}
+
+.tab-title {
+    font-family: WorkSans-Regular;
+    color: #393a3c;
+    font-size: 1.25em;
+    height: 3.5em;
+    line-height: 3.5em;
+    white-space: nowrap;
+}
+
+// ------------GETTING STARTED PAGE BEGINS HERE----------------
+
+.getting-started-main-container {
+    padding-bottom: 2.5em;
+    background-color: #dedede;
+}
+
+.coming-soon-container {
+    background-color: white;
+}
+
+.coming-soon-text {
+    font-family: WorkSans-ExtraBold;
+    font-size: 1.5em;
+}
+
+.coming-soon-p-text {
+    font-family: WorkSans-ExtraBold;
+    font-size: 1em;
+    color: dimgray;
+}
+
+.email-container input {
+    background-color: white;
+    font-family: WorkSans-Regular;
+}
+
+.subscribe-button {
+    background-color: #393a3c;
+    border-radius: 7px;
+    color: white;
+    font-family: Roboto-Condensed;
+    font-size: 1em;
+    height: 3em;
+    width: 13em;
+    margin-left: 1em;
+    margin-bottom: 1.25em;
+}
+
+.first-p {
+    font-family: WorkSans-ExtraBold;
+    font-size: 1.1em;
+    color: #3c99c4;
+}
+
+.second-p {
+    font-family: Roboto-BoldCondensed;
+    font-size: 1em;
+    color: dimgray;
+}
+
+.overview-title {
+    font-family: WorkSans-ExtraBold;
+    font-size: 3em;
+    color: #34ba95;
+}
+
+.number-container { 
+   width: 2.5em;
+   height: 2.5em;
+   background: #3c99c4; 
+   border-radius: 70px;
+}
+
+.number {
+    font-family: WorkSans-ExtraBold;
+    color: white;
+}
+
+.overview-list-headline {
+    font-family: Roboto-Condensed;
+    color: #393a3c;
+    font-size: 2em;
+}
+
+hr {
+    width:100%;
+    height:1px;
+    background: dimgray;
+}
+
+.overview-p {
+    font-family: WorkSans-Regular;
+    font-size: 1em;
+    color: dimgray;
+}
+
+.score-points-headline {
+    font-family: WorkSans-ExtraBold;
+    color: #3c99c4;
+    font-size: 1.5em;
+}
+
+.score-points-p {
+    font-family: Roboto-BoldCondensed;
+    font-size: 1.5em;
+    color: dimgray;
+}
+
+// ------------VIDEOS PAGE BEGINS HERE----------------
+
+.videos-main-container {
+    padding-bottom: 2.5em;
+    background-color: #dedede;
+}
+
+.section-title-container {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .section-title{
     font-family: Roboto-Condensed;
     color: #a6a8ab;
     font-size: 2em;
 }
 
+.row-container {
+    width: 100%;
+}
+
 .video-row {
     text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .video-text {
@@ -77,7 +223,6 @@
     height: 17em;
     width: 17em;
     display: inline-block;
-    margin-right: 2em;
 }
 
 .video-container-center {
@@ -88,6 +233,8 @@
     height: 17em;
     width: 17em;
     display: inline-block;
+    margin-right: 2em;
+    margin-left: 2em;
 }
 
 .video-container-right {
@@ -98,7 +245,6 @@
     height: 17em;
     width: 17em;
     display: inline-block;
-    margin-left: 2em;
 }
 
 .video-image img {
@@ -124,6 +270,6 @@
     color: white;
     font-family: Roboto-Condensed;
     font-size: 1em;
-    height: 3em;
-    width: 13em;
+    height: 2.5em;
+    width: 15em;
 }

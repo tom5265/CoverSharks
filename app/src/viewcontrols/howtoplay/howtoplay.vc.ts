@@ -7,4 +7,9 @@ export default class HowtoplayViewControl extends BaseViewControl {
     context: any = {};
 }
 
+// if (this.context.toggleTab){
+// this.context.toggleTab = true,
+
+// };
+
 register.viewControl('howtoplay-vc', HowtoplayViewControl);
