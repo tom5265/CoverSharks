@@ -25,12 +25,13 @@
             background-size: 100% 100%;
             background-repeat: no-repeat;
             box-sizing: border-box;
+            .right-nav, .left-nav {
+                display: none;
+            }
         }
         .hero-text {
             color: #fff;
-            position: relative;
-            height: 33em;
-            text-align: left;
+            text-align: center;
             p {
                 width: 70%;
                 padding-top: 1em;
@@ -62,119 +63,112 @@
             margin: 0 auto;
             padding: 0.2em 0;
             text-transform: uppercase;
-            text-align: center;
             font-family: WorkSans-ExtraBold, sans-serif;
             letter-spacing: 0.05em;
         }
         .data {
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-        } 
-        .phone {
-            height: 33em;
-        }    
-        .bottom {
-            position: absolute;
-            bottom: 0;
-            height: 100%;
-            width: 100%;
-        }
+            margin-top: 7em;
+        }      
         .phone-pic {
             height: 30em;
-            width: 24em;
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
+            width: 23em;
+            margin: 2.5em auto 0;
+            display: block;
         }
         .phone .bottom {
             #show {
                 display: none;
             }
-        }
-        
+        }      
         //media query for hero
+        @media only screen and (max-width: 707px) {
+            .hero {
+            .right-nav, .left-nav {
+                display: block;
+            }
+            .right-nav {
+                float: right;
+                color: #fffffe;
+                font-size: 2em;
+                cursor: pointer;
+                margin: 0.15em 0.4em 0 0;
+                h2 {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+            .left-nav {
+                float: left;
+                img {
+                    height: 5em;
+                    width: 5em;
+                    padding-left: 1.5em;
+                }
+            }
+            }
+        }
         @media only screen and (max-width: 900px) {
             .hero {
                 background-image: url('../../images/home/coversharks-home-mobile-hero.png');
-                .hero-text {
-                    text-align: center;
-                    height: 24em;
-                }
-                .phone {
-                    height: 17em;
-                }
-
-            }
+            }                   
            .phone .bottom { 
                #hide {
                  display: none;
                 }
                #show {
-                display: inline;
+                display: block;
                 }
                 .phone-pic {
                     height: 18em;
                     width: 19em;
                 }
            }
-        }
-        
+        }      
         @media only screen and (max-width: 460px) {
             .hero .hero-text {
                 .blue-header {
                     font-size: 2.2em;
                 }
             }
-        }
-        
-        
+        }  
         
         // cooler and text div
         .second {
-            background-color: #fff;
+            background-color: #fffffe;
+            padding: 4em 0;
         }
         .cooler-pic {
-            height: 28em;
-            position: relative;
-            .cooler-watch {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                width: 100%;
-                text-align: right;
-                padding-right: 2em;
+            .cooler-watch {            
                 img {
-                    height: 22em;
-                    width: 100%;
-                    max-width: 30em;
-                    // padding-bottom: 26.7%;
+                    height: 17em;
+                    display: block;
+                    margin: 0 auto;
+                    max-width: 100%;
                 }
             }
         }
-        .cooler-msg {
-            height: 28em;
+        .flex {
+            display: flex;
+            display: -webkit-flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .cooler-msg {            
             text-transform: uppercase;
-            position: relative;
             h1 {
-                margin: 0;
+                margin: 0.4em 0;
                 color: #3baf8a;
                 font-family: WorkSans-ExtraBold, sans-serif;
                 line-height: 1;
-                margin-bottom: 0.3em;
                 width: 80%;
             }
             h3 {
                 color: #9e9f9e;
                 font-family: Roboto-BoldCondensed, sans-serif;
                 padding-top: 0;
-                margin-top: -0.5em;
-            }
-            .cooler-msg-data {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
+                margin: 0;
             }
             .little {
                 text-transform: lowercase;
@@ -192,32 +186,41 @@
                 letter-spacing: 0.15em;
                 margin-top: 0.5em;            
             }
-        }
+        }     
+        //media queries for cooler div 
+        @media only screen and (max-width: 900px) {
+            .cooler-msg {
+                text-align: center;
+                h1 {
+                    width: 90%;
+                    margin: 0.75em auto;
+                }
+            }
+        }     
+        //diagonal phone and text div
         .blue-backgrnd {
             background-image: url('../../images/home/bkgrnd.svg');
             background-size: cover;
         }
         .text-msg {
-            height: 28em;
             .text-msg-data {
                 text-align: center;
-                width: 80%;
-                float: right;
-                position: relative;
-                top: 50%;
-                transform: translateY(-50%);
+                margin: 4.5em auto 0;
             }
             h1 {
                 padding: 0;
                 color: #2f88b2;
+                font-size: 3em;
                 line-height: 1;
                 font-family: WorkSans-ExtraBold, sans-serif;
-                margin: 0;
+                margin: 0 auto;
+                width: 90%;
             }
             p {
+                width: 65%;
                 color: #fffffe;
-                padding: 1.5em 0;
-                margin: 0;
+                margin: 1em auto;
+                line-height: 1.8em;
                 font-family: WorkSans-Regular, sans-serif;
             }
             .white-btn {
@@ -227,26 +230,38 @@
                 text-transform: uppercase;
                 border: none;
                 height: 3em;
-                width: 11em;  
-                letter-spacing: 0.1em;
+                width: 11em;
+                font-family: Roboto-Condensed, sans-serif;
             }
         }
         .diagonal-phone {
-            height: 28em;
+            text-align: center;
             img {
-                height: 27em;
-                width: 25em;
-                max-width: 100%;
-                position: relative;
-                top: 50%;
-                transform: translateY(-50%);
+                height: 33em;
+                width: 28em;
             }
         }
+        //media queries for diagonal phone dv
+        @media only screen and (max-width: 900px) {
+            .diagonal-phone {
+                display: none;
+            }
+            .blue-backgrnd {
+                background-image: none;
+                background-color: #182144;
+            }
+           .text-msg .text-msg-data {
+                margin: 0;
+                padding: 4em 0;
+            }
+        }     
+        
+        //overview div
         .gameplay-overview {
             background-color: #f2f1f1;
             text-align: center;
             padding: 2em 0;
-            h2 {
+            .disappearing {
                 font-family: WorkSans-ExtraBold, sans-serif;
                 text-transform: uppercase;
                 color: #318bb6;
@@ -256,6 +271,7 @@
             img {
                 height: 8em;
                 width: 15em;
+                padding-top: 1em;
             }
             .right-box {
                 float: right;
@@ -268,7 +284,7 @@
                 border-bottom: 2px solid #9e9f9e;
                 border-radius: 0.4em;
                 background-color: #fffffe;
-                height: 19em;
+                height: 17em;
                 width: 17em;
                 display: inline-block;
                 text-align: center;
@@ -277,7 +293,11 @@
                     font-family: Roboto-BoldCondensed, sans-serif;
                 }
                 p {
-                    font-family: WorkSans-Regular;
+                    font-family: WorkSans-Regular, sans-serif;
+                    color: #636463;
+                    font-size: 0.8em;
+                    width: 90%;
+                    margin: 0 auto;
                 }
             }
             .bottom-info {
@@ -304,7 +324,7 @@
             .subscriber {
                 border-radius: 0.5em;
                 height: 2em;
-                width: 35em;
+                width: 50%;
                 margin: 1em 0;
             }
             ::-webkit-input-placeholder {
@@ -323,6 +343,37 @@
                  color: #b4b5b4; 
                  text-align: center; 
             }
+            .showing {
+                display: none;
+            }              
         }
+        // media queries for overview div
+         @media only screen and (max-width: 900px) {
+           .gameplay-overview {
+                .left-box, .right-box {
+                    float: none;
+                }
+                .disappearing {
+                    display: none;
+                }
+                img {
+                    height: 60%;
+                    width: 90%;
+                }
+                .white-box {
+                    height: 65%;
+                    width: 70%;
+                }
+                p {
+                    width: 85%;
+                    margin: 0 auto;
+                    padding-bottom: 0.5em;
+                }
+                .card {
+                    padding: 1em 0;
+                }
+            }
+        }     
+        
     }
 }
