@@ -3,8 +3,7 @@
     #platui > #mixins;
     #platui > #variables;
 
-    [plat-control="home-vc"] {
-        
+    [plat-control="home-vc"] {      
         @font-face {
             font-family: WorkSans-ExtraBold;
             src: url('../../fonts/WorkSans/WorkSans-ExtraBold.ttf');
@@ -30,17 +29,17 @@
         .hero-text {
             color: #fff;
             position: relative;
-            height: 35em;
+            height: 33em;
             text-align: left;
             p {
-                width: 75%;
+                width: 70%;
                 padding-top: 1em;
                 margin: 0 auto;
                 line-height: 1.8em;
                 font-family: WorkSans-Regular, sans-serif;
             }
             .btn-align {
-                width: 75%;
+                width: 70%;
                 margin: 0 auto;
             }
             .btn {
@@ -58,8 +57,8 @@
         }
         .blue-header {
             background-color: #318bb6;
-            font-size: 3.5em;
-            width: 8.5em;
+            font-size: 3em;
+            width: 75%;
             margin: 0 auto;
             padding: 0.2em 0;
             text-transform: uppercase;
@@ -67,30 +66,72 @@
             font-family: WorkSans-ExtraBold, sans-serif;
             letter-spacing: 0.05em;
         }
-        .phone {
-            position: relative;
-            height: 35em;
-        }
         .data {
-            position: absolute;
+            position: relative;
             top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }     
+            transform: translateY(-50%);
+        } 
+        .phone {
+            height: 33em;
+        }    
         .bottom {
             position: absolute;
             bottom: 0;
             height: 100%;
             width: 100%;
         }
-        #phone-pic {
-            height: 32em;
+        .phone-pic {
+            height: 30em;
             width: 24em;
             position: absolute;
             bottom: 0;
-            left: 3em;
-            max-width: 100%;
+            left: 50%;
+            transform: translateX(-50%);
         }
+        .phone .bottom {
+            #show {
+                display: none;
+            }
+        }
+        
+        //media query for hero
+        @media only screen and (max-width: 900px) {
+            .hero {
+                background-image: url('../../images/home/coversharks-home-mobile-hero.png');
+                .hero-text {
+                    text-align: center;
+                    height: 24em;
+                }
+                .phone {
+                    height: 17em;
+                }
+
+            }
+           .phone .bottom { 
+               #hide {
+                 display: none;
+                }
+               #show {
+                display: inline;
+                }
+                .phone-pic {
+                    height: 18em;
+                    width: 19em;
+                }
+           }
+        }
+        
+        @media only screen and (max-width: 460px) {
+            .hero .hero-text {
+                .blue-header {
+                    font-size: 2.2em;
+                }
+            }
+        }
+        
+        
+        
+        // cooler and text div
         .second {
             background-color: #fff;
         }
@@ -165,7 +206,6 @@
                 position: relative;
                 top: 50%;
                 transform: translateY(-50%);
-
             }
             h1 {
                 padding: 0;
@@ -197,11 +237,9 @@
                 height: 27em;
                 width: 25em;
                 max-width: 100%;
-
                 position: relative;
                 top: 50%;
                 transform: translateY(-50%);
-
             }
         }
         .gameplay-overview {
@@ -273,17 +311,14 @@
                  color: #b4b5b4;
                  text-align: center;
             }
-
             :-moz-placeholder { /* Firefox 18- */
                  color: #b4b5b4;  
                  text-align: center;
             }
-
             ::-moz-placeholder {  /* Firefox 19+ */
                  color: #b4b5b4; 
                  text-align: center;
             }
-
             :-ms-input-placeholder {  
                  color: #b4b5b4; 
                  text-align: center; 
