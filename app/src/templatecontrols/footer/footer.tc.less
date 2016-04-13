@@ -1,0 +1,165 @@
+& {
+    #platui > #media;
+    #platui > #mixins;
+    #platui > #variables;
+
+    [plat-control="footer"] {
+        @top-footer-height: 9em;
+        
+        @font-face {
+            font-family: WorkSans-SemiBold;
+            src: url('../../fonts/WorkSans/WorkSans-SemiBold.ttf');
+        }
+        @font-face {
+            font-family: Roboto-Condensed;
+            src: url('../../fonts/Roboto/Roboto-Condensed.ttf');
+        }
+        .footer-container {
+            overflow: hidden;
+        }
+        .top-footer {
+            background-color: #1c202b;
+            font-family: WorkSans-SemiBold, sans-serif;
+            .logo-box {
+                height: @top-footer-height;               
+            }
+            .link-box {
+                height: @top-footer-height;
+            }
+            .button-box {
+                height: @top-footer-height;
+            }
+            .logos {
+                text-align: center;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+                .social-logo {
+                    height: 1.5em;
+                    width: 1.5em;
+                }
+                .covershark-logo {
+                    height: 5em;
+                    width: 6em;
+                }
+                .facebook {
+                        margin-right: 0.5em;
+                    }
+                .twitter {
+                        margin-left: 0.5em;
+                    }
+            }
+            .link-box {
+                text-align: center;
+                font-family: WorkSans-SemiBold, sans-serif;
+                text-transform: uppercase;
+                .link-container {
+                    display: inline-block;
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                ul {
+                display: inline-block;
+                list-style-type: none;
+                text-align: left;
+                padding: 0 2em;
+                }
+                li {
+                    padding: 0.5em 0;
+                }
+                a {
+               color: #324357;
+                }
+                .left-border {
+                    border-left: 1px solid #324357;
+                }
+            }
+        }
+        .bottom-footer {
+            background-color: #0e1214;
+            font-family: WorkSans-SemiBold, sans-serif;
+            .left-text {
+                color: #324357;
+                height: 3.5em;
+                padding: 0 2em;
+                text-transform: uppercase;
+                p {
+                    height: 3.5em;
+                    line-height: 3.5em;
+                    vertical-align: middle;
+                    float: left;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+            .right-text {
+                color: #324357;
+                height: 3.5em;
+                line-height: 3.5em;
+                padding: 0 2em;
+                text-transform: uppercase;
+                p {
+                    height: 3.5em;
+                    line-height: 3.5em;
+                    vertical-align: middle;
+                    float: right;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+        .button-box {
+            .button-container {
+                text-align: center;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .green-btn {
+                background-color: #3baf8a;
+                text-transform: uppercase;
+                border: none;
+                border-radius: 0.5em;
+                color: #e4e4e3;
+                height: 3em;
+                width: 11em;   
+                margin-top: 1.2em;
+                font-family: Roboto-Condensed, sans-serif;
+                letter-spacing: 0.15em;
+                margin-top: 0.5em;
+            }
+        }
+        
+        @media only screen and (max-width: 900px) {
+            .top-footer {
+                .logo-box {
+                    height: 6em;
+                    padding-top: 1em;
+                }              
+                 .button-box {
+                    height: 6em;
+                }
+                .link-box {
+                    display: none;
+                }
+            }
+            .bottom-footer {
+                .left-text, .right-text {
+                    height: 2.5em;
+                    .clear {
+                        display: none;
+                    }
+                    p {
+                    height: 2.5em;
+                    line-height: 2.5em;
+                    vertical-align: middle;
+                    float: none;
+                    text-align: center;
+                    margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
