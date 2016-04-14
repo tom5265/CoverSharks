@@ -16,6 +16,11 @@
 
 .topnav-container {
     height: 3.5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
 }
 
 .logo-container {
@@ -69,9 +74,82 @@ a:visited {
     width: 2.5em;
     padding-top: 1em;
 }
+.topnav-container > .mobile-wrap {
+    display: none;
+}
+
+.mobile-wrap .right-nav {
+    position: relative;
+    padding-left: 1.75em;
+    font-size: 2em;
+    top: 0.6em;
+   }
+.mobile-wrap .right-nav:before {       
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 1em;
+        height: 0.125em;
+        border-top: 0.375em double #2f88b2;
+        border-bottom: 0.125em solid #2f88b2;
+     }
+
 
 @media only screen and (max-width: 707px) {
-    .topnav-container {
-        display: none;
-    }
-}
+            .topnav-container {
+                height: 3.5em;
+                background-color: #fffffe;
+                .mobile-wrap {
+                    display: initial;
+                }
+            .right-nav, .left-nav {
+                display: inline-block;
+                height: 3.5em;
+                line-height: 3.5em;
+            }
+            .right-nav {
+                float: right;
+                cursor: pointer;
+            }
+            .left-nav {
+                height: 3.5em;
+                float: left;
+                img {
+                    margin-left: 1em;
+                    height: 3em;
+                    width: 3.5em;
+                    vertical-align: middle;
+                }
+            }
+            .main-wrap {
+                display: none;
+            }
+            }
+        }
+        .plat-modal > .plat-modal-container > .modal-content  {
+            font-family: WorkSans-ExtraBold, sans-serif;
+            text-transform: uppercase;
+            background-color: rgba(24, 33, 68, 1);
+            color: #fffffe;
+            height: 100vh;
+            width: 100%;
+            text-align: center;
+                .plat-link {
+                    color: #fffffe;
+                }
+                #cover-logo {
+                    height: 3em;
+                    width: 4em;
+                    margin-top: 2em;
+                }
+                .low-images img {
+                    height: 2.8em;
+                    width: 1.5em;
+                }
+                #fbook {
+                    margin-right: 1em;
+                }
+                #twit {
+                    margin-left: 1em;
+                }
+            }

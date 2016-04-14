@@ -1,17 +1,43 @@
-
-        <div class="topnav-container">
-            <div class="logo-container">
-                <a href="/home"><img src="./images/home/logo-color.svg" class="logo" /></a>
-            </div>
-            <div class="list-container">
-                <ul>
-                    <li class="topnav-list"><a href="/howtoplay">HOW TO PLAY</a></li>
-                    <li class="topnav-list"><a href="/about">ABOUT</a></li>
-                    <li class="topnav-list"><a href="/promotions">PROMOTIONS</a></li>
-                </ul>
-            </div>
-            <div class="social-media">
-                <a href=""><img src="./images/home/fb-grey.svg" class="social-icons" /></a>
-                <a href=""><img src="./images/home/twitter-grey.svg" class="social-icons" /></a>
-            </div>
+<div class="topnav-container">
+    <div class="mobile-wrap">
+        <div plat-tap="toggleModal()" class="right-nav">
+            
         </div>
+        <div class="left-nav">
+            <img src="../../images/home/coversharks-mark-color.png">
+        </div>
+    </div>
+    <div class="main-wrap">
+        <div class="logo-container">
+            <a href="/home"><img src="./images/home/logo-color.svg" class="logo" /></a>
+        </div>
+        <div class="list-container">
+            <ul>
+                <li class="topnav-list"><a href="/howtoplay">HOW TO PLAY</a></li>
+                <li class="topnav-list"><a href="/about">ABOUT</a></li>
+                <li class="topnav-list"><a href="/promotions">PROMOTIONS</a></li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <a href=""><img src="./images/home/fb-grey.svg" class="social-icons" /></a>
+            <a href=""><img src="./images/home/twitter-grey.svg" class="social-icons" /></a>
+        </div>
+    </div>
+</div>
+<plat-modal plat-options="{ transition: 'fade' }" plat-bind="status">
+    <div class="modal-content">
+        <img id="cover-logo" src="../../images/home/coversharks-mark-white.svg" plat-tap="toggleModal()">
+        <plat-link plat-options="{ view: home }">
+            <h1>Home</h1></plat-link>
+        <plat-link plat-options="{ view: howtoplay }">
+            <h1>How to Play</h1></plat-link>
+        <plat-link plat-options="{ view: about }">
+            <h1>About</h1></plat-link>
+        <plat-link plat-options="{ view: promotions }">
+            <h1>Promotions</h1></plat-link>
+        <div class="low-images">
+            <img id="fbook" src="../../images/home/fb-white.png">
+            <img id="twit" src="../../images/home/twitter-white.png">
+        </div>
+    </div>
+</plat-modal>
