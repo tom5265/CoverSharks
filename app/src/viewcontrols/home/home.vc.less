@@ -25,6 +25,9 @@
             background-size: 100% 100%;
             background-repeat: no-repeat;
             box-sizing: border-box;
+            .right-nav, .left-nav {
+                display: none;
+            }
         }
         .hero-text {
             color: #fff;
@@ -78,10 +81,36 @@
             }
         }      
         //media query for hero
+        @media only screen and (max-width: 707px) {
+            .hero {
+            .right-nav, .left-nav {
+                display: block;
+            }
+            .right-nav {
+                float: right;
+                color: #fffffe;
+                font-size: 2em;
+                cursor: pointer;
+                margin: 0.15em 0.4em 0 0;
+                h2 {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+            .left-nav {
+                float: left;
+                img {
+                    height: 5em;
+                    width: 5em;
+                    padding-left: 1.5em;
+                }
+            }
+            }
+        }
         @media only screen and (max-width: 900px) {
             .hero {
                 background-image: url('../../images/home/coversharks-home-mobile-hero.png');
-            }
+            }                   
            .phone .bottom { 
                #hide {
                  display: none;
@@ -112,8 +141,10 @@
             .cooler-watch {            
                 img {
                     height: 17em;
+                    display: block;
+                    margin: 0 auto;
+                    max-width: 100%;
                 }
-                text-align: center;
             }
         }
         .flex {
@@ -161,7 +192,8 @@
             .cooler-msg {
                 text-align: center;
                 h1 {
-                    width: 100%;
+                    width: 90%;
+                    margin: 0.75em auto;
                 }
             }
         }     
@@ -252,7 +284,7 @@
                 border-bottom: 2px solid #9e9f9e;
                 border-radius: 0.4em;
                 background-color: #fffffe;
-                height: 19em;
+                height: 17em;
                 width: 17em;
                 display: inline-block;
                 text-align: center;
@@ -261,7 +293,11 @@
                     font-family: Roboto-BoldCondensed, sans-serif;
                 }
                 p {
-                    font-family: WorkSans-Regular;
+                    font-family: WorkSans-Regular, sans-serif;
+                    color: #636463;
+                    font-size: 0.8em;
+                    width: 90%;
+                    margin: 0 auto;
                 }
             }
             .bottom-info {
@@ -288,7 +324,7 @@
             .subscriber {
                 border-radius: 0.5em;
                 height: 2em;
-                width: 60%;
+                width: 50%;
                 margin: 1em 0;
             }
             ::-webkit-input-placeholder {
@@ -334,7 +370,7 @@
                     padding-bottom: 0.5em;
                 }
                 .card {
-                    padding: 2em 0;
+                    padding: 1em 0;
                 }
             }
         }     

@@ -1,33 +1,41 @@
-<div class="col-dsk-12 col-phn-12">
-    <div id="banner">
-        <h1 id="bannertext">FEATURED PROMOTIONS</h1>
-        <img id="bannerpic" src="images/promotions/football3-hero.png" />
+<plat-modal plat-options="{ transition: 'fade' }" plat-bind="showRegModal" id="registerModal">
+        <plat-button id="closeX">&times</plat-button>
+    <div id="register">
+        <h4 id="formtitle">Please enter your registration information:</h4>
+        <div id="inputStyle">
+            <input type="text" placeholder="First and Last Name" id="modalName"></input>
+            <input type="text" placeholder="Email" id="modalEmail">
+            <input type="number" placeholder="Zip Code" id="modalZip">
+            <input type="text" Placeholder="Favorite Team" id="modalTeam">
+        </div>
+    </div>
+    <plat-button id="modalregisterbtn" plat-tap="toggleModal()">REGISTER</plat-button>
+</plat-modal>
+    <div id="banner" class="row">
+        <div class="col-phn-12">
+            <div id="bannerpic">
+               <span id="bannertext">FEATURED PROMOTIONS</span>
+            </div>
+        </div>
     </div>
     <div class="row" id="promo">
-        <div class="col-dsk-6" id="promoText">
+        <div class="col-phn-12 col-tab-6" id="promoText">
             <div id="line1">
-                <span>REGESTER NOW FOR A CHANCE TO WIN A</span>
+                <span>REGISTER NOW FOR A CHANCE TO WIN A</span>
             </div>
             <div id="line2">
                 <span>FREE YETI COOLER <br> or APPLE WATCH</span>
             </div>
+            <div id="line3">
+                <span>Through April 17th</span>
+            </div>
+            <div id="line4">
+                <span>Auburn vs. Alabama A-Day Promotion Free <br>givaways at on-site promotions</span>
+            </div>
+                <plat-button id="registerbtn" plat-tap="toggleModal()">REGISTER</plat-button>
         </div>
-        <div class="col-dsk-6" id="promoPic">
+        <div class="col-phn-12 col-tab-6" id="promoPic">
             <img src="images/home/apple-watch-and-yeti-image.png" alt="">
         </div>
     </div>
-    <div class="row" id="info">
-        <div class="col-dsk-3"
-            <h1>INFORMATION LEFT</h1>
-       </div>
-       <div class="col-dsk-6">
-           <h1>INFORMATION CENTER</h1>
-       </div>
-       <div class="col-dsk-3">
-           <h1>INFORMATION RIGHT</h1>
-       </div>
-    </div>
-    <div id="footer">
-        <h1>FOOTER</h1>
-    </div>
-</div> 
+    
