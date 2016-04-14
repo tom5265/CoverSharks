@@ -1,15 +1,27 @@
 <plat-modal plat-options="{ transition: 'fade' }" plat-bind="showRegModal" id="registerModal">
-        <plat-button id="closeX">&times</plat-button>
-    <div id="register">
-        <h4 id="formtitle">Please enter your registration information:</h4>
-        <div id="inputStyle">
-            <input type="text" placeholder="First and Last Name" id="modalName"></input>
-            <input type="text" placeholder="Email" id="modalEmail">
-            <input type="number" placeholder="Zip Code" id="modalZip">
-            <input type="text" Placeholder="Favorite Team" id="modalTeam">
+    <div id="close">
+        <plat-button id="closeX" plat-tap="toggleModal()">&times</plat-button>
+    </div>
+    
+    <div id="register" class="row">
+        <div class="col-phn-12 col-tab-12">
+            <div id="formtitle">
+                <p>Please enter your registration information:</p>
+            </div>
+            <div id="inputStyle">
+                <input type="text" placeholder="First and Last Name" id="modalName"></input>
+                <input type="text" placeholder="Email" id="modalEmail">
+                <input type="number" placeholder="Zip Code" id="modalZip">
+                <input type="text" Placeholder="Favorite Team" id="modalTeam">
+            </div>
+            <div id="modalText">
+                <p>Enter the above text fields and click register to enter the Free Yeti Cooler
+                or Apple Watch Promotion. This promotion runs through April 17. You will
+                recieve a confirmation email after your registration has been processed.</p>
+            </div>
+            <plat-button id="modalregisterbtn" plat-tap="toggleModal()">REGISTER</plat-button>
         </div>
     </div>
-    <plat-button id="modalregisterbtn" plat-tap="toggleModal()">REGISTER</plat-button>
 </plat-modal>
     <div id="banner" class="row">
         <div class="col-phn-12">
