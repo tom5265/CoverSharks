@@ -13,7 +13,6 @@
     src: url("../../fonts/WorkSans/WorkSans-SemiBold.ttf")
 }
 
-
 .topnav-container {
     height: 3.5em;
     position: absolute;
@@ -21,6 +20,7 @@
     left: 0;
     width: 100%;
     z-index: 999999;
+    background-color: #fffffe;
 }
 
 .logo-container {
@@ -94,7 +94,6 @@ a:visited {
         border-bottom: 0.125em solid #2f88b2;
      }
 
-
 @media only screen and (max-width: 707px) {
             .topnav-container {
                 height: 3.5em;
@@ -105,7 +104,7 @@ a:visited {
             .right-nav, .left-nav {
                 display: inline-block;
                 height: 3.5em;
-                line-height: 3.5em;
+                line-height: 3.3em;
             }
             .right-nav {
                 float: right;
@@ -125,19 +124,21 @@ a:visited {
                 display: none;
             }
             }
-        }
-        
+        }       
         //modal styling
         .plat-modal > .plat-modal-container > .modal-content  {
             font-family: WorkSans-ExtraBold, sans-serif;
             text-transform: uppercase;
             background-color: #182144;
+            z-index: 99999;
             color: #fffffe;
             height: 100vh;
             width: 100%;
             text-align: center;
+            overflow-y: scroll;
                 .closer {
                     float: right;
+                    cursor: default;
                     font-size: 2em;
                     margin: 0.8em 0.8em 0 0;
                     padding: 0;
@@ -145,20 +146,25 @@ a:visited {
                 a {
                     color: #fffffe;
                 }
+                p {
+                    font-size: 2em;
+                    margin: 1em 0;
+                    padding: 0;
+                }
                 #cover-logo {
                     height: 3em;
                     width: 4em;
-                    margin: 2em 0;
-                }
-                .low-images img {
-                    height: 2.8em;
-                    width: 1.5em;
+                    margin: 1.25em 0;
                 }
                 #fbook {
                     margin-right: 1em;
+                    height: 2.8em;
+                    width: 1.5em;
                 }
                 #twit {
                     margin-left: 1em;
+                    height: 2.8em;
+                    width: 3em;
                 }
             }
             .plat-modal {
