@@ -26,7 +26,9 @@
 </div>
 <plat-modal plat-options="{ transition: 'fade' }" plat-bind="status">
     <div class="modal-content">
-        <img id="cover-logo" src="../../images/home/coversharks-mark-white.svg" plat-tap="toggleModal()">
+        <p class="closer" plat-tap="toggleModal()">X</p>
+        <div style="clear:both;"></div>
+        <img id="cover-logo" src="../../images/home/coversharks-mark-white.svg">
         <plat-link plat-options="{ view: home }">
             <h1>Home</h1></plat-link>
         <plat-link plat-options="{ view: howtoplay }">
