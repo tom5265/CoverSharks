@@ -5,10 +5,10 @@
         </div>
     </div>
     <div class="tab-container">
-        <button class="tab" plat-tap="toggleTab()">
+        <button class="tab" id="active-started-tab" plat-tap="toggleTab()">
             <span class="tab-title">Getting Started</span>
         </button>
-        <button class="tab" plat-tap="toggleTab()">
+        <button class="tab" id="active-videos-tab" plat-tap="toggleTab()">
             <span class="tab-title">Videos</span>
         </button>
     </div>
@@ -18,36 +18,39 @@
 
         <div class="getting-started-main-container">
             <div class="coming-soon-container">
-                                    <div class="row">
-                <div class="col-tab-6">
+                <div class="coming-soon-columns">
                     <div class="phone-image1">
                         <img src="./images/howtoplay/gettingstartedtab/phone1.png" />
                     </div>
-                    <div class="coming-soon-headline">
-                        <span class="coming-soon-text">APP COMING SOON</span>
-                    </div>
-                    <div class="coming-soon-p">
-                        <p class="coming-soon-p-text">Our app is in development, but you can enter your email to be the first to recieve updates about
-                            CoverSharks.</p>
-                    </div>
-                    <div class="email-container">
-                        <input type="email" plat-bind="email" placeholder="Email"></input>
-                    </div>
-                    <div class="button-container">
-                        <button class="subscribe-button" plat-tap="subscribe">SUBSCRIBE</button>
+                    <div class="coming-soon-right-column">
+                        <div class="coming-soon-headline">
+                            <span class="coming-soon-text">APP COMING SOON</span>
+                        </div>
+                        <div class="coming-soon-p">
+                            <p class="coming-soon-p-text">Our app is in development, but you can enter your email to be the first to recieve updates about
+                                CoverSharks.
+                            </p>
+                        </div>
+                        <div class="email-container">
+                            <input type="email" plat-bind="email" placeholder="Email" />
+                        </div>
+                        <div class="button-container">
+                            <button class="subscribe-button" plat-tap="subscribe">SUBSCRIBE</button>
+                        </div>
                     </div>
                 </div>
-                </div>
-                <div class="first-p-container">
-                    <p class="first-p">Our contents are based on real-time point spreads that are used to establish favorites and underdogs.</p>
-                </div>
-                <div class="second-p-container">
-                    <p class="second-p">Instead of picking players based on their statistics, our contests are based on outcomes of games in
-                        real-time. The concept behind our game is fun, easy, mobile and patent pending.</p>
+                <div class="coming-soon-bottom-container">
+                    <div class="first-p-container">
+                        <p class="first-p">Our contents are based on real-time point spreads that are used to establish favorites and underdogs.</p>
+                    </div>
+                    <div class="second-p-container">
+                        <p class="second-p">Instead of picking players based on their statistics, our contests are based on outcomes of games
+                            in real-time. The concept behind our game is fun, easy, mobile and patent pending.</p>
+                    </div>
                 </div>
             </div>
             <div class="overview-container">
-                <div class- "overview-title-container">
+                <div class="overview-title-container">
                     <span class="overview-title">OVERVIEW OF GAMEPLAY</span>
                 </div>
                 <div class="full-list-item-container">
@@ -79,39 +82,36 @@
                     </div>
                 </div>
                 <div class="score-points-full-container">
-                    <div class="row">
-                    <div class="col-tab-6">
-                        <div class="score-points-title-container">
-                            <span class="score-points-headline">Score Points and Win</span>
-                        </div>
-                        <div class="score-points-p-container">
-                            <p class="score-points-p">Once the games begin, teams and players compete to win points. With each win, you accumulate
-                                points that can be redeemed.</p>
-                        </div>
-                        <div class="score-points-phone">
-                            <img src="./images/howtoplay/gettingstartedtab/phone2.png" />
-                        </div>
+                    <div class="score-points-title-container">
+                        <span class="score-points-headline">Score Points and Win</span>
                     </div>
+                    <div class="score-points-p-container">
+                        <p class="score-points-p">Once the games begin, teams and players compete to win points. With each win, you accumulate points
+                            that can be redeemed.</p>
                     </div>
+                    <div class="score-points-phone">
+                        <img src="./images/howtoplay/gettingstartedtab/phone2.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="full-list-item-container">
+                <div class="number-container">
+                    <span class="number">3</span>
+                </div>
+                <div class="overview-list-container">
+                    <span class="overview-list-headline">Play for Free</span>
+                </div>
+                <hr />
+                <div class="overview-p-container">
+                    <p class="overview-p">CoverSharks lets you play for free in any of our games. Want to play with more on the line than picking
+                        the winner? Choose from a variety of games and choose your competition each and every week of the
+                        season.
+                    </p>
+                </div>
                 </div>
                 <div class="full-list-item-container">
                     <div class="number-container">
-                        <span class="number">3</span>
-                    </div>
-                    <div class="overview-list-container">
-                        <span class="overview-list-headline">Play for Free</span>
-                    </div>
-                    <hr />
-                    <div class="overview-p-container">
-                        <p class="overview-p">CoverSharks lets you play for free in any of our games. Want to play with more on the line than picking
-                            the winner? Choose from a variety of games and choose your competition each and every week of
-                            the season.
-                        </p>
-                    </div>
-                    <div class="full-list-item-container">
-                        <div class="number-container">
-                            <span class="number">4</span>
-                        </div>
+                        <span class="number">4</span>
                     </div>
                     <div class="overview-list-container">
                         <span class="overview-list-headline">Play with Friends, Family, Rivals & Co-workers</span>
@@ -126,120 +126,121 @@
             </div>
 
 
-            <!------VIDEO CONTAINER BEGINS HERE------->
 
-            <div class="videos-main-container">
-                <div class="row-container">
-                    <div class="section-title-container">
-                        <span class="section-title">Pick Your Contest</span>
+        <!------VIDEO CONTAINER BEGINS HERE------->
+
+        <div class="videos-main-container" plat-visible="{{showVideoTab}}">
+            <div class="row-container">
+                <div class="section-title-container">
+                    <span class="section-title">Pick Your Contest</span>
+                </div>
+                <div class="video-row">
+                    <div class="video-container-left">
+                        <div class="video-image">
+                            <img src="./images/howtoplay/videostab/image1.jpg" alt="Pick the Winners" />
+                        </div>
+                        <div class="video-text">
+                            <span class="headline">Pick the Winners</span>
+                            <p class="content">It’s as simple as that. Who do you think will win the game?</p>
+                        </div>
+                        <button class="video-button">VIDEO COMING SOON</button>
                     </div>
-                    <div class="video-row">
-                        <div class="video-container-left">
-                            <div class="video-image">
-                                <img src="./images/howtoplay/videostab/image1.jpg" alt="Pick the Winners" />
-                            </div>
-                            <div class="video-text">
-                                <span class="headline">Pick the Winners</span>
-                                <p class="content">It’s as simple as that. Who do you think will win the game?</p>
-                            </div>
-                            <button class="video-button">VIDEO COMING SOON</button>
+                    <div class="video-container-center">
+                        <div class="video-image">
+                            <img src="./images/howtoplay/videostab/image2.jpg" alt="Cover the Spread" />
                         </div>
-                        <div class="video-container-center">
-                            <div class="video-image">
-                                <img src="./images/howtoplay/videostab/image2.jpg" alt="Cover the Spread" />
-                            </div>
-                            <div class="video-text">
-                                <span class="headline">Cover the Spread</span>
-                                <p class="content">The same way you have always played. Easy, fun, mobile.</p>
-                            </div>
-                            <button class="video-button">VIDEO COMING SOON</button>
+                        <div class="video-text">
+                            <span class="headline">Cover the Spread</span>
+                            <p class="content">The same way you have always played. Easy, fun, mobile.</p>
                         </div>
-                        <div class="video-container-right">
-                            <div class="video-image">
-                                <img src="./images/howtoplay/videostab/image3.jpg" alt="Over / Under" />
-                            </div>
-                            <div class="video-text">
-                                <span class="headline">Over / Under</span>
-                                <p class="content">Pick whether you think the total will be over or under.</p>
-                            </div>
-                            <button class="video-button">VIDEO COMING SOON</button>
+                        <button class="video-button">VIDEO COMING SOON</button>
+                    </div>
+                    <div class="video-container-right">
+                        <div class="video-image">
+                            <img src="./images/howtoplay/videostab/image3.jpg" alt="Over / Under" />
                         </div>
+                        <div class="video-text">
+                            <span class="headline">Over / Under</span>
+                            <p class="content">Pick whether you think the total will be over or under.</p>
+                        </div>
+                        <button class="video-button">VIDEO COMING SOON</button>
                     </div>
                 </div>
-                <div class="row-container">
-                    <div class="section-title-container">
-                        <span class="section-title">Pick Your Opponent</span>
+            </div>
+            <div class="row-container">
+                <div class="section-title-container">
+                    <span class="section-title">Pick Your Opponent</span>
+                </div>
+                <div class="video-row">
+                    <div class="video-container-left">
+                        <div class="video-image">
+                            <img src="./images/howtoplay/videostab/image4.jpg" alt="Single Player" />
+                        </div>
+                        <div class="video-text">
+                            <span class="headline">Single Player</span>
+                            <p class="content">Be the captain of your own team and score all the points.</p>
+                        </div>
+                        <button class="video-button">VIDEO COMING SOON</button>
                     </div>
-                    <div class="video-row">
-                        <div class="video-container-left">
-                            <div class="video-image">
-                                <img src="./images/howtoplay/videostab/image4.jpg" alt="Single Player" />
-                            </div>
-                            <div class="video-text">
-                                <span class="headline">Single Player</span>
-                                <p class="content">Be the captain of your own team and score all the points.</p>
-                            </div>
-                            <button class="video-button">VIDEO COMING SOON</button>
+                    <div class="video-container-center">
+                        <div class="video-image">
+                            <img src="./images/howtoplay/videostab/image5.jpg" alt="Head to Head" />
                         </div>
-                        <div class="video-container-center">
-                            <div class="video-image">
-                                <img src="./images/howtoplay/videostab/image5.jpg" alt="Head to Head" />
-                            </div>
-                            <div class="video-text">
-                                <span class="headline">Head to Head</span>
-                                <p class="content">Choose your who you want to play individually.</p>
-                            </div>
-                            <button class="video-button">VIDEO COMING SOON</button>
+                        <div class="video-text">
+                            <span class="headline">Head to Head</span>
+                            <p class="content">Choose your who you want to play individually.</p>
                         </div>
-                        <div class="video-container-right">
-                            <div class="video-image">
-                                <img src="./images/howtoplay/videostab/image6.jpg" alt="Join/Create a Pool" />
-                            </div>
-                            <div class="video-text">
-                                <span class="headline">Create a Pool</span>
-                                <p class="content">Customize how you want to play and who to play.</p>
-                            </div>
-                            <button class="video-button">VIDEO COMING SOON</button>
+                        <button class="video-button">VIDEO COMING SOON</button>
+                    </div>
+                    <div class="video-container-right">
+                        <div class="video-image">
+                            <img src="./images/howtoplay/videostab/image6.jpg" alt="Join/Create a Pool" />
                         </div>
+                        <div class="video-text">
+                            <span class="headline">Create a Pool</span>
+                            <p class="content">Customize how you want to play and who to play.</p>
+                        </div>
+                        <button class="video-button">VIDEO COMING SOON</button>
                     </div>
                 </div>
-                <div class="row-container">
-                    <div class="section-title-container">
-                        <span class="section-title">Pick Your Games</span>
+            </div>
+            <div class="row-container">
+                <div class="section-title-container">
+                    <span class="section-title">Pick Your Games</span>
+                </div>
+                <div class="video-row">
+                    <div class="video-container-left">
+                        <div class="video-image">
+                            <img src="./images/howtoplay/videostab/image9.jpg" alt="Pick6" />
+                        </div>
+                        <div class="video-text">
+                            <span class="headline">Pick3</span>
+                            <p class="content">This is the quick and easy version for those on the go.</p>
+                        </div>
+                        <button class="video-button">VIDEO COMING SOON</button>
                     </div>
-                    <div class="video-row">
-                        <div class="video-container-left">
-                            <div class="video-image">
-                                <img src="./images/howtoplay/videostab/image9.jpg" alt="Pick6" />
-                            </div>
-                            <div class="video-text">
-                                <span class="headline">Pick3</span>
-                                <p class="content">This is the quick and easy version for those on the go.</p>
-                            </div>
-                            <button class="video-button">VIDEO COMING SOON</button>
+                    <div class="video-container-center">
+                        <div class="video-image">
+                            <img src="./images/howtoplay/videostab/image7.jpg" alt="Pick6" />
                         </div>
-                        <div class="video-container-center">
-                            <div class="video-image">
-                                <img src="./images/howtoplay/videostab/image7.jpg" alt="Pick6" />
-                            </div>
-                            <div class="video-text">
-                                <span class="headline">Pick6</span>
-                                <p class="content">Pick the six teams you think will win. Every game counts.</p>
-                            </div>
-                            <button class="video-button">VIDEO COMING SOON</button>
+                        <div class="video-text">
+                            <span class="headline">Pick6</span>
+                            <p class="content">Pick the six teams you think will win. Every game counts.</p>
                         </div>
-                        <div class="video-container-right">
-                            <div class="video-image">
-                                <img src="./images/howtoplay/videostab/image8.jpg" alt="Pick6" />
-                            </div>
-                            <div class="video-text">
-                                <span class="headline">Pick10</span>
-                                <p class="content">Pick the Dog of the Week, O/U, and the Lock of the Week.</p>
-                            </div>
-                            <button class="video-button">VIDEO COMING SOON</button>
+                        <button class="video-button">VIDEO COMING SOON</button>
+                    </div>
+                    <div class="video-container-right">
+                        <div class="video-image">
+                            <img src="./images/howtoplay/videostab/image8.jpg" alt="Pick6" />
                         </div>
+                        <div class="video-text">
+                            <span class="headline">Pick10</span>
+                            <p class="content">Pick the Dog of the Week, O/U, and the Lock of the Week.</p>
+                        </div>
+                        <button class="video-button">VIDEO COMING SOON</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
