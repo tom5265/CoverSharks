@@ -1,13 +1,13 @@
-<plat-modal plat-options="{ transition: 'fade' }" plat-bind="showRegModal" id="registerModal">
-    <div id="close">
+
+<!-- The Modal -->
+<plat-modal plat-options="{ transition: 'fade' }" plat-bind="showRegModal" class="modal-prompt promo-modal">
+    
+    <div class="prompt-title">Please enter your registration information:
         <plat-button id="closeX" plat-tap="toggleModal()">&times</plat-button>
     </div>
-    
-    <div id="register" class="row">
+    <div class="prompt-body">
+       <div id="register" class="row">
         <div class="col-phn-12 col-tab-12">
-            <div id="formtitle">
-                <p>Please enter your registration information:</p>
-            </div>
             <div id="inputStyle">
                 <input type="text" placeholder="First and Last Name" id="modalName"></input>
                 <input type="text" placeholder="Email" id="modalEmail">
@@ -22,7 +22,9 @@
             <plat-button id="modalregisterbtn" plat-tap="toggleModal()">REGISTER</plat-button>
         </div>
     </div>
+    </div>
 </plat-modal>
+
     <div id="banner" class="row">
         <div class="col-phn-12">
             <div id="bannerpic">
