@@ -87,7 +87,7 @@
 //     border-bottom: #3c99c4 2px solid;
 // }
 
-// ------------GETTING STARTED PAGE BEGINS HERE----------------
+//--------GETTING STARTED PAGE BEGINS HERE--------//
 
 .getting-started-main-container {
     padding-bottom: 2.5em;
@@ -98,23 +98,29 @@
     background-color: white;
 }
 
+.coming-soon-column-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .coming-soon-columns {
     width: 100%;
 }
 
-// .phone-image1 {
-//     width: 40%;
-//     float: left;
-// }
+.phone-image1 {
+    width: 50%;
+    float: left;
+}
 
-// .coming-soon-right-column {
-//     width: 60%;
-//     float: right;
-// }
+.coming-soon-right-column {
+    width: 50%;
+    float: left;
+}
 
 .coming-soon-text {
     font-family: WorkSans-ExtraBold;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .coming-soon-p-text {
@@ -138,22 +144,33 @@
     width: 13em;
     margin-left: 1em;
     margin-bottom: 1.25em;
+    border: none;
 }
 
 .coming-soon-bottom-container {
-    width: 100%;
+    width: 80%;
+    clear: both;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .first-p {
     font-family: WorkSans-ExtraBold;
-    font-size: 1.1em;
+    font-size: 1.5em;
     color: #3c99c4;
+    margin-bottom: 0;
 }
 
 .second-p {
     font-family: Roboto-BoldCondensed;
-    font-size: 1em;
+    font-size: 1.25em;
     color: dimgray;
+}
+
+.overview-container {
+    // width: 95%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .overview-title-container {
@@ -197,6 +214,8 @@ hr {
     width:100%;
     height:1px;
     background: dimgray;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .overview-p {
@@ -205,10 +224,16 @@ hr {
     color: dimgray;
 }
 
+.score-points-full-container {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .score-points-headline {
     font-family: WorkSans-ExtraBold;
     color: #3c99c4;
-    font-size: 1.5em;
+    font-size: 3em;
 }
 
 .score-points-p {
@@ -217,7 +242,18 @@ hr {
     color: dimgray;
 }
 
-// ------------VIDEOS PAGE BEGINS HERE----------------
+//------GETTTING STARTED MOBILE STYLING BEGINS HERE------//
+
+// @media only screen and (max-width: 900px) {
+//     #remove {
+//         display: none;
+//     }
+    
+    
+    
+// }
+
+//------------VIDEOS PAGE BEGINS HERE------------//
 
 .videos-main-container {
     padding-bottom: 2.5em;
@@ -228,8 +264,7 @@ hr {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 2.5%;
 }
 
 .section-title{
@@ -239,14 +274,13 @@ hr {
 }
 
 .row-container {
-    width: 100%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .video-row {
     text-align: center;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .video-text {
@@ -256,35 +290,14 @@ hr {
     padding-top: .6em;
 }
 
-.video-container-left {
+.video-container {
     border-right: 2px solid #9e9f9e;
     border-bottom: 2px solid #9e9f9e;
     border-radius: 0.4em;
     background-color: #fffffe;
     height: 17em;
-    width: 17em;
-    display: inline-block;
-}
-
-.video-container-center {
-    border-right: 2px solid #9e9f9e;
-    border-bottom: 2px solid #9e9f9e;
-    border-radius: 0.4em;
-    background-color: #fffffe;
-    height: 17em;
-    width: 17em;
-    display: inline-block;
-    margin-right: 2em;
-    margin-left: 2em;
-}
-
-.video-container-right {
-    border-right: 2px solid #9e9f9e;
-    border-bottom: 2px solid #9e9f9e;
-    border-radius: 0.4em;
-    background-color: #fffffe;
-    height: 17em;
-    width: 17em;
+    width: 100%;
+    max-width: 17em;
     display: inline-block;
 }
 
@@ -312,5 +325,57 @@ hr {
     font-family: Roboto-Condensed;
     font-size: 1em;
     height: 2.5em;
-    width: 15em;
+    width: 80%;
+    max-width: 15em;
+    border: none;
+}
+
+//------VIDEO MOBILE STYLING BEGINS HERE------//
+
+@media only screen and (max-width: 995px) {
+    
+    .section-title-container {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .section-title{
+        font-size: 1.75em;
+    }
+        
+    .row-container {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .video-container {
+        height: 14em;
+        position: relative;
+    }
+
+    .headline {
+        font-family: WorkSans-ExtraBold;
+        color: #3c99c4;
+        font-size: 1.2em;
+    }
+
+    .content {
+        font-family: WorkSans-Regular;
+        font-size: .8em;
+        margin-bottom: .5em;
+    }
+
+    .video-button {
+        font-size: .9em;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: .5em;
+        margin: auto;
+    }
+   
 }

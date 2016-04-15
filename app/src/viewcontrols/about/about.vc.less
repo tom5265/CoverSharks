@@ -124,6 +124,7 @@ input {
     width: 13em;
     margin-left: 1em;
     margin-bottom: 1.25em;
+    border: none;
 }
 
 .subscribe-container p {
@@ -226,21 +227,21 @@ input {
 }
 
 
-//----BEGIN MOBILE STYLE CHANGES ----//
+//----BEGIN MOBILE STYLING----//
 
 @media only screen and (max-width: 900px) {
     #remove {
         display: none;
     }
     
-.how-text-container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding-top: 0em;
-    
-}
+    .how-text-container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding-top: 0em;
+        
+    }
     .how-main {
         font-size: 2em;
         margin-right: auto;
@@ -260,95 +261,91 @@ input {
         font-size: 1.15em;
         margin-right: auto;
         margin-left: auto;
-                padding-top: .5em;
-                                padding-bottom: .7em;
+        padding-top: .5em;
+        padding-bottom: .7em;
     }
 
+    .how-p {
+        font-size: 1em;
 
+    }
 
-.how-p {
-    font-size: 1em;
+    input {
+        width: 80%;
+    }
 
-}
+    .subscribe-container .subscribe-button {
+        width: 40%;
+        margin-left: 0em;
+        margin-bottom: 1.25em;
+    }
 
-input {
-    width: 80%;
-}
+    .main-team-container {
+                width: 100%;
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+            padding-left:4%;
+            padding-right: 4%;
+    }
 
-.subscribe-container .subscribe-button {
-    width: 40%;
-    margin-left: 0em;
-    margin-bottom: 1.25em;
-}
+    .member-title {
+        font-size: 2em;
+    }
 
-.main-team-container {
-            width: 100%;
+    .title-p {
+        margin: .5em 0 .75em 0
+    }
+
+    .members {
         text-align: center;
-        margin-right: auto;
         margin-left: auto;
-        padding-left:4%;
-        padding-right: 4%;
-}
+        margin-right: auto;
+        margin-top: .5em;
+        width: 90%;
+        background: -webkit-linear-gradient(top, #2d97d2, #2d97d2 3.5em, white 3.5em, white);
+        margin-bottom: 5%;
+    }
 
-.member-title {
-    font-size: 2em;
-}
+    .member-name-container {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 100%;
+        height: 3em;
+        padding-top: .4em;
+    }
 
-.title-p {
-    margin: .5em 0 .75em 0
-}
+    .member-name {
+        font-size: 1.25em;
+    }
 
-.members {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: .5em;
-    width: 90%;
-    background: -webkit-linear-gradient(top, #2d97d2, #2d97d2 3.5em, white 3.5em, white);
-    margin-bottom: 5%;
-}
+    .member-position {
+        font-size: 1em;
+    }
 
-.member-name-container {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    width: 100%;
-    height: 3em;
-    padding-top: .4em;
-}
+    .member-p-container {
+        text-align: center;
+    }
 
-.member-name {
-    font-size: 1.25em;
-}
+    .member-p {
+        font-size: 1em;
+        padding: .5em;
+    }
 
-.member-position {
-    font-size: 1em;
-}
+    .fantasy-sports {
+        padding-top: .5em;
+        padding-bottom: .5em;
+    }
 
-.member-p-container {
-    text-align: center;
-}
+    .fantasy-title {
+        font-size: 2em;
+    }
 
-.member-p {
-    font-size: 1em;
-    padding: .5em;
-}
-
-.fantasy-sports {
-    text-align: center;
-    background: white;
-    padding-top: .5em;
-    padding-bottom: .5em;
-}
-
-.fantasy-title {
-    font-size: 2em;
-}
-
-.fantasy-p {
-    font-size: 1em;
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-top: .5em;
-}
+    .fantasy-p {
+        font-size: 1em;
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-top: .5em;
+    }
 }
