@@ -1,16 +1,15 @@
 
 
 .promo-modal {
-    overflow-y: scroll;
     #platui > #Modal;
     .plat-modal-prompt(prompt-title-background-color; #edecec);
     .plat-modal-prompt(prompt-title-color; #3396bf);
 }
     #register {
-        // position: relative;
+        position: relative;
         text-align: center;
         padding: 1em;
-        // display: inline-block;
+        display: inline-block;
     }
 
     #closeX {
@@ -47,6 +46,9 @@
     #modalTeam {
         width: 45%;
         background-color: #ffffff;
+        position: relative;
+        color: #a6a6a6;
+        height: 3em;
     }
 
     #modalregisterbtn {
@@ -63,16 +65,16 @@
         margin: auto;
     }
     
-    // @media only screen and (max-width: 700px) {
-    //     #modalZip {
-    //         width: 90%;
-    //     }
-        
-    //     #modalTeam {
-    //         width: 90%;
-    //     }
-    // }
+    @media only screen and (max-width: 700px) {
+            #modalZip {
+                    width: 90%;
+            }
+            
+            #modalTeam {
+                    width: 90%;
+            }
 
+        }
 
 
 & {
@@ -132,6 +134,18 @@
                     height: 3em;
                     vertical-align: middle;  
         }
+        
+        #promo {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    width: 80%;
+                    max-width: 100%;
+                    height: auto;
+                    margin: 0 auto;
+        }
 
         #promoText {
                     text-align: left;
@@ -141,7 +155,6 @@
                     color: grey;
                     margin-top: 8%;
                     font-size: 1.45em;
-                    margin-left: 12%;
 
             }
             #line2 {
@@ -149,37 +162,35 @@
                     color: #29ba92;
                     font-size: 3em;
                     margin-top: 4%;
-                    margin-left: 12%;
             }
             #line3 {
                     font-family: WorkSans-ExtraBold;
                     color: #29ba92;
                     font-size: 1.45em;
-                    margin-left: 12%;
                     margin-top: 3%;
             }
             #line4 {
                     font-family: WorkSans-Regular;
                     color: #929292;
                     font-size: 1em;
-                    margin-left: 12%;
                     margin-top: 4%;
             }
                 
         }
 
         #registerbtn {
-                    margin-left: 12%;
                     color: white;
                     background-color: #3a3a3c;
                     border-radius: .25em;
                     margin-top: 5%;
                     width: 12em;
-                    
         }
-
-        #promoPic {
-                text-align: left;
+        
+        #coolerAndWatch {
+                height: 20em;
+                display: block;
+                margin: 0 auto;
+                max-width: 100%;
         }
 
 

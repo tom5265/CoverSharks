@@ -12,7 +12,23 @@
                 <input type="text" placeholder="First and Last Name" id="modalName"></input>
                 <input type="text" placeholder="Email" id="modalEmail">
                 <input type="number" placeholder="Zip Code" id="modalZip">
-                <input type="text" Placeholder="Favorite Team" id="modalTeam">
+                    <select id="modalTeam">
+                        <option value="Favorite Team">Favorite Team</option>
+                        <option value="Alabama">Alabama</option>
+                        <option value="Arkansas">Arkansas</option>
+                        <option value="Auburn">Auburn</option>
+                        <option value="Florida">Florida</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Kentucky">Kentucky</option>
+                        <option value="LSU">LSU</option>
+                        <option value="Missouri">Missouri</option>
+                        <option value="Mississippi State">Mississippi State</option>
+                        <option value="Ole Miss">Ole Miss</option>
+                        <option value="South Carolina">South Carolina</option>
+                        <option value="Tennessee">Tennessee</option>
+                        <option value="Texas A&M">Texas A&M</option>
+                        <option value="Vanderbilt">Vanderbilt</option>
+                    </select>
             </div>
             <div id="modalText">
                 <p>Enter the above text fields and click register to enter the Free Yeti Cooler
@@ -28,28 +44,31 @@
     <div id="banner" class="row">
         <div class="col-phn-12">
             <div id="bannerpic">
-               <span id="bannertext">FEATURED PROMOTIONS</span>
+                <span id="bannertext">FEATURED PROMOTIONS</span>
             </div>
         </div>
     </div>
-    <div class="row" id="promo">
-        <div class="col-phn-12 col-tab-6" id="promoText">
-            <div id="line1">
-                <span>REGISTER NOW FOR A CHANCE TO WIN A</span>
+    <div id="content">
+        <div class="row" id="promo">
+            <div class="col-phn-12 col-tab-6" id="promoText">
+                <div id="line1">
+                    <span>REGISTER NOW FOR A CHANCE TO WIN A</span>
+                </div>
+                <div id="line2">
+                    <span>FREE YETI COOLER <br> or APPLE WATCH</span>
+                </div>
+                <div id="line3">
+                    <span>Through April 17th</span>
+                </div>
+                <div id="line4">
+                    <span>Auburn vs. Alabama A-Day Promotion Free <br>givaways at on-site promotions</span>
+                </div>
+                    <plat-button id="registerbtn" plat-tap="toggleModal()">REGISTER</plat-button>
+                    
             </div>
-            <div id="line2">
-                <span>FREE YETI COOLER <br> or APPLE WATCH</span>
+            <div class="col-phn-12 col-tab-6" id="promoPic">
+                <img src="images/home/apple-watch-and-yeti-image.png" alt="" id="coolerAndWatch">
             </div>
-            <div id="line3">
-                <span>Through April 17th</span>
-            </div>
-            <div id="line4">
-                <span>Auburn vs. Alabama A-Day Promotion Free <br>givaways at on-site promotions</span>
-            </div>
-                <plat-button id="registerbtn" plat-tap="toggleModal()">REGISTER</plat-button>
-        </div>
-        <div class="col-phn-12 col-tab-6" id="promoPic">
-            <img src="images/home/apple-watch-and-yeti-image.png" alt="">
         </div>
     </div>
     
