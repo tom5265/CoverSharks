@@ -96,6 +96,7 @@
 
 .coming-soon-container {
     background-color: white;
+    padding-bottom: 1em;
 }
 
 .coming-soon-column-container {
@@ -108,30 +109,44 @@
     width: 100%;
 }
 
-.phone-image1 {
-    width: 50%;
-    float: left;
+.phone-image1 img {
+    width: 29%;
+    margin-left:9%;
+    display: inline-block;
+    //display: block; USE THIS IN MOBILE
 }
 
 .coming-soon-right-column {
     width: 50%;
-    float: left;
+    margin-left: 11%;
+    margin-top: 1em;
+    display: inline-block;
+    //display: block; USE THIS IN MOBILE
+}
+
+.right-column-contents {
+    margin-top: 18%;
 }
 
 .coming-soon-text {
     font-family: WorkSans-ExtraBold;
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 .coming-soon-p-text {
     font-family: WorkSans-ExtraBold;
-    font-size: 1em;
+    font-size: 1.5em;
     color: dimgray;
+}
+
+.email-container {
+    margin-top: 1em;
 }
 
 .email-container input {
     background-color: white;
     font-family: WorkSans-Regular;
+    width: 100%;
 }
 
 .subscribe-button {
@@ -141,8 +156,8 @@
     font-family: Roboto-Condensed;
     font-size: 1em;
     height: 3em;
-    width: 13em;
-    margin-left: 1em;
+    width: 50%;
+    margin-left: 0;
     margin-bottom: 1.25em;
     border: none;
 }
@@ -165,16 +180,20 @@
     font-family: Roboto-BoldCondensed;
     font-size: 1.25em;
     color: dimgray;
+    padding-bottom: 0;
+    padding-top: .5em;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .overview-container {
-    // width: 95%;
     margin-right: auto;
     margin-left: auto;
 }
 
 .overview-title-container {
     text-align: center;
+    padding-top: 1em;
 }
 
 .overview-title {
@@ -190,11 +209,14 @@
 }
 
 .number-container { 
-   width: 2.5em;
-   height: 2.5em;
-   background: #3c99c4; 
-   border-radius: 70px;
-   text-align: center;
+    width: 2.5em;
+    height: 2.5em;
+    background: #3c99c4; 
+    border-radius: 70px;
+    text-align: center;
+    display: inline-block; 
+    //display: block; USE THIS IN MOBILE
+    margin-right: 1em;
    
 }
 
@@ -202,6 +224,11 @@
     font-family: WorkSans-ExtraBold;
     color: white;
     font-size: 2em;
+}
+
+.overview-list-container {
+    display: inline-block;
+    //display: block; USE THIS IN MOBILE
 }
 
 .overview-list-headline {
@@ -230,6 +257,12 @@ hr {
     margin-left: auto;
 }
 
+.score-points-left-column-container {
+    display: inline-block;
+    width: 50%;
+    margin-left: 11%;
+}
+
 .score-points-headline {
     font-family: WorkSans-ExtraBold;
     color: #3c99c4;
@@ -241,6 +274,12 @@ hr {
     font-size: 1.5em;
     color: dimgray;
 }
+.score-points-phone {
+    display: inline-block;
+    width: 29%;
+    margin-right:9%;
+}
+
 
 //------GETTTING STARTED MOBILE STYLING BEGINS HERE------//
 
