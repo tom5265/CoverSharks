@@ -135,8 +135,12 @@ a:visited {
             background-color: #182144;
             z-index: 99999;
             color: #fffffe;
-            height: 100vh;
-            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            overflow-y: scroll;
             text-align: center;
                 .closer {
                     float: right;
@@ -171,6 +175,5 @@ a:visited {
                 }
             }
             .plat-modal {
-                opacity: 0.95;
-                overflow-y: scroll;              
+                opacity: 0.95;            
             }
