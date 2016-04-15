@@ -11,15 +11,13 @@ export default class HowtoplayViewControl extends BaseViewControl {
     };
     
     toggleTab() {
-        console.log("it's working!")
-        this.context.showMe = !this.context.showMe;
-        this.context.showTab = !this.context.showTab;
+        this.context.showTab = false;
+        this.context.showMe = true;
     }
     
     toggleSecond() {
-        this.context.showTab = !this.context.showTab;
-        this.context.showMe = !this.context.showMe;
-
+        this.context.showMe = false;
+        this.context.showTab = true;
     }
     
     
