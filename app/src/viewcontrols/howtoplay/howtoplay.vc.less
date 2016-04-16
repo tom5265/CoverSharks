@@ -61,11 +61,28 @@
     height: 3.5em;
     background-color: white;
 }
-.tab {
-    border: none;
+.tab1 {
+    cursor: pointer;
+    border-right: 1px solid #a6a8ab;
     height: 3.4em;
-    width: 10em;
     background-color: white;
+    
+    &.active {
+    background-color: #dedede;
+    border-bottom: #3c99c4 3px solid;
+    }
+}
+
+.tab2 {
+    cursor: pointer;
+    border-left: 1px solid #a6a8ab;
+    height: 3.4em;
+    background-color: white;
+    
+    &.active {
+    background-color: #dedede;
+    border-bottom: #3c99c4 3px solid;
+    }
 }
 
 .tab-title {
@@ -76,16 +93,6 @@
     line-height: 3.5em;
     white-space: nowrap;
 }
-
-// #active-started-tab {
-//     background-color: #dedede;
-//     border-bottom: #3c99c4 2px solid;
-// }
-
-// #active-videos-tab {
-//     background-color: #dedede;
-//     border-bottom: #3c99c4 2px solid;
-// }
 
 //--------GETTING STARTED PAGE BEGINS HERE--------//
 
@@ -100,32 +107,23 @@
 }
 
 .coming-soon-column-container {
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
+    // position: relative;
 }
 
 .coming-soon-columns {
     width: 100%;
 }
 
-.phone-image1 img {
-    width: 29%;
-    margin-left:9%;
-    display: inline-block;
-    //display: block; USE THIS IN MOBILE
+.phone-image1  {
+    text-align: right;
+    // margin-right: 10%;
 }
 
 .coming-soon-right-column {
-    width: 50%;
-    margin-left: 11%;
-    margin-top: 1em;
-    display: inline-block;
-    //display: block; USE THIS IN MOBILE
-}
-
-.right-column-contents {
-    margin-top: 18%;
+    padding-right: 20%;
 }
 
 .coming-soon-text {
@@ -193,7 +191,8 @@
 
 .overview-title-container {
     text-align: center;
-    padding-top: 1em;
+    padding-top: 1.5em;
+    padding-bottom: 2em;
 }
 
 .overview-title {
@@ -255,13 +254,17 @@ hr {
     width: 80%;
     margin-right: auto;
     margin-left: auto;
+    // position: relative;
 }
 
-.score-points-left-column-container {
-    display: inline-block;
-    width: 50%;
-    margin-left: 11%;
-}
+// .score-points-left-column-container {
+    // display: inline-block;
+    // width: 50%;
+    // margin-left: 11%;
+    // position: absolute;
+    // top: 50%;
+    // transform: translateY(-50%);
+// }
 
 .score-points-headline {
     font-family: WorkSans-ExtraBold;
@@ -274,11 +277,12 @@ hr {
     font-size: 1.5em;
     color: dimgray;
 }
-.score-points-phone {
-    display: inline-block;
-    width: 29%;
-    margin-right:9%;
-}
+
+// .score-points-phone {
+//     display: inline-block;
+//     width: 29%;
+//     margin-right:0;
+// }
 
 
 //------GETTTING STARTED MOBILE STYLING BEGINS HERE------//
@@ -394,6 +398,7 @@ hr {
     .video-container {
         height: 14em;
         position: relative;
+        margin-bottom: 1.5em;
     }
 
     .headline {
