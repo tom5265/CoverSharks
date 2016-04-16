@@ -5,13 +5,19 @@
         </div>
     </div>
     <div class="tab-container">
-        <button class="tab" id="active-started-tab" plat-tap="toggleTab()">
+        <div class="row">
+            <div class="col-tab-6 col-phn-12">
+        <div class="tab1 {{showMe ? 'active' : ''}}" plat-tap="toggleTab()">
             <span class="tab-title">Getting Started</span>
-        </button>
-        <button class="tab" id="active-videos-tab" plat-tap="toggleSecond()">
+        </div>
+        </div>
+            <div class="col-tab-6 col-phn-12">
+        <div class="tab2 {{showTab ? 'active' : ''}}" plat-tap="toggleSecond()">
             <span class="tab-title">Videos</span>
-        </button>
-        <!--change buttons to half page divs and assign style for active button colors-->
+        </div>
+        </div>
+        </div>
+        <!--change buttons to divs and assign style for button colors-->
     </div>
     <div class="content-container">
 
@@ -22,9 +28,13 @@
 
                 <div class="coming-soon-column-container">
                     <div class="coming-soon-columns">
+                                <div class="row">
+            <div class="col-tab-4 col-phn-12">
                         <div class="phone-image1">
                             <img src="./images/howtoplay/gettingstartedtab/phone1.png" />
                         </div>
+                        </div>
+            <div class="col-tab-8 col-phn-12">
                         <div class="coming-soon-right-column">
                             <div class="coming-soon-headline">
                                 <span class="coming-soon-text">APP COMING SOON</span>
@@ -40,6 +50,8 @@
                             <div class="button-container">
                                 <button class="subscribe-button" plat-tap="subscribe">SUBSCRIBE</button>
                             </div>
+                        </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -86,6 +98,8 @@
                     </div>
                 </div>
                 <div class="score-points-full-container">
+                                                    <div class="row">
+            <div class="col-tab-8 col-phn-12">
                     <div class="score-points-left-column-container">
                         <div class="score-points-title-container">
                             <span class="score-points-headline">Score Points and Win</span>
@@ -95,8 +109,12 @@
                                 points that can be redeemed.</p>
                         </div>
                     </div>
+                    </div>
+            <div class="col-tab-4 col-phn-12">
                     <div class="score-points-phone" id="remove">
                         <img src="./images/howtoplay/gettingstartedtab/phone2.png" />
+                    </div>
+                    </div>
                     </div>
                 </div>
                 <div class="full-list-item-container">
