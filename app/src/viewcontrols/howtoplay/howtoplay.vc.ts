@@ -7,7 +7,8 @@ export default class HowtoplayViewControl extends BaseViewControl {
 
    context = {
         showMe: true,
-        showTab: false
+        showTab: false,
+        link: document.links
     };
     
     toggleTab() {
@@ -20,7 +21,21 @@ export default class HowtoplayViewControl extends BaseViewControl {
         this.context.showTab = true;
     }
     
-    
+    loaded() {
+       let links:any = this.context.link;
+       let url = window.location.href;
+        console.log(url);
+        console.log(links);
+        for (var i = 0; i < links.length; i++) {
+            if (links[i].className == 'active') {
+                links[i].classList.remove('active');
+            }
+            if (url == links[i].href) {
+                links[i].className = 'active';
+            }
+       }
+       super.loaded();  
+   }
 }
 
 register.viewControl('howtoplay-vc', HowtoplayViewControl);
