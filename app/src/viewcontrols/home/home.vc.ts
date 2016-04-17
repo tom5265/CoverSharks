@@ -1,11 +1,13 @@
 import {register} from 'platypus';
 import BaseViewControl from '../base/base.vc';
+import HowtoplayViewControl from '../howtoplay/howtoplay.vc'
 
 export default class HomeViewControl extends BaseViewControl {
     templateString: string = require('./home.vc.html');
 
     context: any = {
-        link: document.links
+        link: document.links,
+        howtoplay: HowtoplayViewControl
     }
    
    loaded() {
