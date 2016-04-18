@@ -4,7 +4,7 @@
 
         </div>
         <div class="left-nav">
-            <img src="../../images/home/coversharks-mark-color.png">
+            <img src="../../images/home/coversharks-mark-color.png" alt="coversharks logo">
         </div>
     </div>
     <div class="main-wrap">
@@ -19,27 +19,27 @@
             </ul>
         </div>
         <div class="social-media">
-            <a href=""><img src="./images/home/fb-grey.svg" class="social-icons" /></a>
-            <a href=""><img src="./images/home/twitter-grey.svg" class="social-icons" /></a>
+            <a href="https://www.facebook.com/coversharksapp/" target="_blank"><img src="./images/home/fb-grey.svg" class="social-icons" alt="facebook"/></a>
+            <a href="https://twitter.com/CoverSharks" target="_blank"><img src="./images/home/twitter-grey.svg" class="social-icons" alt="twitter"/></a>
         </div>
     </div>
 </div>
-<plat-modal plat-options="{ transition: 'fade' }" plat-bind="status">
+<plat-modal plat-options="{ transition: 'fade' }" plat-bind="status" class="opacity">
     <div class="modal-content">
         <p class="closer" plat-tap="toggleModal()">X</p>
         <div style="clear:both;"></div>
-        <img id="cover-logo" src="../../images/home/coversharks-mark-white.svg">
-        <plat-link plat-options="{ view: home }" plat-tap="toggleModal()">
-            <p>Home</p></plat-link>
-        <plat-link plat-options="{ view: howtoplay }" plat-tap="toggleModal()">
-            <p>How to Play</p></plat-link>
-        <plat-link plat-options="{ view: about }" plat-tap="toggleModal()">
-            <p>About</p></plat-link>
-        <plat-link plat-options="{ view: promotions }" plat-tap="toggleModal()">
-            <p>Promotions</p></plat-link>
+        <img id="cover-logo" src="../../images/home/coversharks-mark-white.svg" alt="coversharks logo">
+        <a href="/" plat-tap="toggleModal()">
+            <p>Home</p></a>
+        <a href="/howtoplay" plat-tap="toggleModal()">
+            <p>How to Play</p></a>
+        <a href="/about" plat-tap="toggleModal()">
+            <p>About</p></a>
+        <a href="/promotions" plat-tap="toggleModal()">
+            <p>Promotions</p></a>
         <div class="low-images">
-            <img id="fbook" src="../../images/home/fb-white.png">
-            <img id="twit" src="../../images/home/twitter-white.png">
+            <a href="https://www.facebook.com/coversharksapp/"><img id="fbook" src="../../images/home/fb-white.png" alt="facebook"></a>
+            <a href="https://twitter.com/CoverSharks"><img id="twit" src="../../images/home/twitter-white.png" alt="twitter"></a>
         </div>
     </div>
 </plat-modal>
