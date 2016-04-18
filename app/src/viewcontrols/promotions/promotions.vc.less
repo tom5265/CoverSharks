@@ -2,6 +2,8 @@
 
 .promo-modal {
     #platui > #Modal;
+    #platui > #variables;
+    #platui > #Modal > #dependencies;
     .plat-modal-prompt(prompt-title-background-color; #edecec);
     .plat-modal-prompt(prompt-title-color; #3396bf);
 }
@@ -10,7 +12,6 @@
         text-align: center;
         padding: 1em;
         display: inline-block;
-        // margin-bottom: 10em;
     }
 
     #closeX {
@@ -69,6 +70,13 @@
     }
     
     @media only screen and (max-width: 700px) {
+            .promo-modal {
+                #platui > #Modal;
+                #platui > #variables;
+                #platui > #Modal > #dependencies;
+                .plat-modal-prompt(prompt-top; 0%);
+            }
+        
             #modalZip {
                     width: 90%;
             }
