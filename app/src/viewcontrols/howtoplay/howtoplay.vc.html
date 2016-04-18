@@ -1,23 +1,22 @@
 <div class="main-container">
     <div class="top-image">
         <div class="top-howtoplay-image">
-            <h1 class="howtoplay-main">HOW TO PLAY</h1>
+            <p class="howtoplay-main">HOW TO PLAY</p>
         </div>
     </div>
     <div class="tab-container">
         <div class="row">
-            <div class="col-tab-6 col-phn-12">
-        <div class="tab1 {{showMe ? 'active' : ''}}" plat-tap="toggleTab()">
-            <span class="tab-title">Getting Started</span>
+            <div class="col-tab-6 col-phn-6">
+                <div class="tab1 {{showMe ? 'active' : ''}}" plat-tap="toggleTab()">
+                    <span class="tab-title">Getting Started</span>
+                </div>
+            </div>
+            <div class="col-tab-6 col-phn-6">
+                <div class="tab2 {{showTab ? 'active' : ''}}" plat-tap="toggleSecond()">
+                    <span class="tab-title">Videos</span>
+                </div>
+            </div>
         </div>
-        </div>
-            <div class="col-tab-6 col-phn-12">
-        <div class="tab2 {{showTab ? 'active' : ''}}" plat-tap="toggleSecond()">
-            <span class="tab-title">Videos</span>
-        </div>
-        </div>
-        </div>
-        <!--change buttons to divs and assign style for button colors-->
     </div>
     <div class="content-container">
 
@@ -28,34 +27,35 @@
 
                 <div class="coming-soon-column-container">
                     <div class="coming-soon-columns">
-                                <div class="row">
-            <div class="col-tab-4 col-phn-12">
-                        <div class="phone-image1">
-                            <img src="./images/howtoplay/gettingstartedtab/phone1.png" />
-                        </div>
-                        </div>
-            <div class="col-tab-8 col-phn-12">
-                        <div class="coming-soon-right-column">
-                            <div class="coming-soon-headline">
-                                <span class="coming-soon-text">APP COMING SOON</span>
+                        <div class="row">
+                            <div class="col-tab-4 col-phn-12">
+                                <div class="phone-image1">
+                                    <img src="./images/howtoplay/gettingstartedtab/phone1.png" id="remove" />
+                                </div>
                             </div>
-                            <div class="coming-soon-p">
-                                <p class="coming-soon-p-text">Our app is in development, but you can enter your email to be the first to recieve updates
-                                    about CoverSharks.</p>
-                                </p>
+                            <div class="col-dsk-8 col-tab-12 col-phn-12">
+                                <div class="coming-soon-right-column">
+                                    <div class="coming-soon-headline">
+                                        <span class="coming-soon-text">APP COMING SOON</span>
+                                    </div>
+                                    <div class="coming-soon-p">
+                                        <p class="coming-soon-p-text">Our app is in development, but you can enter your email to be the first to recieve
+                                            updates about CoverSharks.</p>
+                                        </p>
+                                    </div>
+                                    <img src="./images/howtoplay/gettingstartedtab/phone1-mobile.png" id="addimage" class="phone-image2" />
+                                    <div class="email-container">
+                                        <input type="email" plat-bind="email" placeholder="Email" />
+                                    </div>
+                                    <div class="button-container">
+                                        <button class="subscribe-button" plat-tap="subscribe">SUBSCRIBE</button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="email-container">
-                                <input type="email" plat-bind="email" placeholder="Email" />
-                            </div>
-                            <div class="button-container">
-                                <button class="subscribe-button" plat-tap="subscribe">SUBSCRIBE</button>
-                            </div>
-                        </div>
-                        </div>
                         </div>
                     </div>
                 </div>
-                <div class="coming-soon-bottom-container">
+                <div class="coming-soon-bottom-container" id="remove">
                     <div class="first-p-container">
                         <p class="first-p">Our contents are based on real-time point spreads that are used to establish favorites and underdogs.</p>
                     </div>
@@ -70,8 +70,10 @@
                     <span class="overview-title">OVERVIEW OF GAMEPLAY</span>
                 </div>
                 <div class="full-list-item-container">
-                    <div class="number-container">
-                        <span class="number">1</span>
+                    <div class="number-line-container">
+                        <div class="number-container">
+                            <span class="number">1</span>
+                        </div>
                     </div>
                     <div class="overview-list-container">
                         <span class="overview-list-headline">Pick Your Contest</span>
@@ -84,8 +86,10 @@
                     </div>
                 </div>
                 <div class="full-list-item-container">
-                    <div class="number-container">
-                        <span class="number">2</span>
+                    <div class="number-line-container">
+                        <div class="number-container">
+                            <span class="number">2</span>
+                        </div>
                     </div>
                     <div class="overview-list-container">
                         <span class="overview-list-headline">Choose How You Want to Play</span>
@@ -98,28 +102,30 @@
                     </div>
                 </div>
                 <div class="score-points-full-container">
-                                                    <div class="row">
-            <div class="col-tab-8 col-phn-12">
-                    <div class="score-points-left-column-container">
-                        <div class="score-points-title-container">
-                            <span class="score-points-headline">Score Points and Win</span>
+                    <div class="row">
+                        <div class="col-dsk-8 col-tab-12 col-phn-12">
+                            <div class="score-points-left-column-container">
+                                <div class="score-points-title-container">
+                                    <span class="score-points-headline">Score Points and Win</span>
+                                </div>
+                                <div class="score-points-p-container">
+                                    <p class="score-points-p">Once the games begin, teams and players compete to win points. With each win, you accumulate
+                                        points that can be redeemed.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="score-points-p-container">
-                            <p class="score-points-p">Once the games begin, teams and players compete to win points. With each win, you accumulate
-                                points that can be redeemed.</p>
+                        <div class="col-tab-4 col-phn-12">
+                            <div class="score-points-phone" id="remove">
+                                <img src="./images/howtoplay/gettingstartedtab/phone2.png" />
+                            </div>
                         </div>
-                    </div>
-                    </div>
-            <div class="col-tab-4 col-phn-12">
-                    <div class="score-points-phone" id="remove">
-                        <img src="./images/howtoplay/gettingstartedtab/phone2.png" />
-                    </div>
-                    </div>
                     </div>
                 </div>
                 <div class="full-list-item-container">
-                    <div class="number-container">
-                        <span class="number">3</span>
+                    <div class="number-line-container">
+                        <div class="number-container">
+                            <span class="number">3</span>
+                        </div>
                     </div>
                     <div class="overview-list-container">
                         <span class="overview-list-headline">Play for Free</span>
@@ -128,13 +134,14 @@
                     <div class="overview-p-container">
                         <p class="overview-p">CoverSharks lets you play for free in any of our games. Want to play with more on the line than picking
                             the winner? Choose from a variety of games and choose your competition each and every week of
-                            the season.
-                        </p>
+                            the season.</p>
                     </div>
                 </div>
                 <div class="full-list-item-container">
-                    <div class="number-container">
-                        <span class="number">4</span>
+                    <div class="number-line-container">
+                        <div class="number-container">
+                            <span class="number">4</span>
+                        </div>
                     </div>
                     <div class="overview-list-container">
                         <span class="overview-list-headline">Play with Friends, Family, Rivals & Co-workers</span>

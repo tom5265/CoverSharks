@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: "WorkSans-ExtraLight";
-    src: url("../../fonts/WorkSans/WorkSans-ExtraLight.ttf")
+    src: url("/fonts/WorkSans/WorkSans-ExtraLight.ttf")
 }
 
 @font-face {
@@ -34,7 +34,7 @@
 }
 
 .main-container {
-    background-color: #dedede;
+    background-color: #f2f1f1;
 }
 
 .howtoplay-main{
@@ -57,18 +57,16 @@
 
 .tab-container {
     text-align: center;
-    border-bottom: #a6a8ab 2px solid;
-    height: 3.5em;
-    background-color: white;
 }
 .tab1 {
     cursor: pointer;
     border-right: 1px solid #a6a8ab;
+    border-bottom: #a6a8ab 2px solid;
     height: 3.4em;
     background-color: white;
     
     &.active {
-    background-color: #dedede;
+    background-color: #f2f1f1;
     border-bottom: #3c99c4 3px solid;
     }
 }
@@ -76,11 +74,12 @@
 .tab2 {
     cursor: pointer;
     border-left: 1px solid #a6a8ab;
+    border-bottom: #a6a8ab 2px solid;
     height: 3.4em;
     background-color: white;
     
     &.active {
-    background-color: #dedede;
+    background-color: #f2f1f1;
     border-bottom: #3c99c4 3px solid;
     }
 }
@@ -98,7 +97,7 @@
 
 .getting-started-main-container {
     padding-bottom: 2.5em;
-    background-color: #dedede;
+    background-color: #f2f1f1;
 }
 
 .coming-soon-container {
@@ -110,7 +109,6 @@
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    // position: relative;
 }
 
 .coming-soon-columns {
@@ -119,11 +117,19 @@
 
 .phone-image1  {
     text-align: right;
-    // margin-right: 10%;
+}
+
+#addimage {
+    display: none;
+}
+
+#remove-tablet {
+    display: none;
 }
 
 .coming-soon-right-column {
     padding-right: 20%;
+    padding-top: 10%;
 }
 
 .coming-soon-text {
@@ -145,6 +151,7 @@
     background-color: white;
     font-family: WorkSans-Regular;
     width: 100%;
+    height: 3em;
 }
 
 .subscribe-button {
@@ -207,27 +214,30 @@
     margin-right: auto;
 }
 
-.number-container { 
-    width: 2.5em;
-    height: 2.5em;
-    background: #3c99c4; 
-    border-radius: 70px;
-    text-align: center;
-    display: inline-block; 
-    //display: block; USE THIS IN MOBILE
+.number-line-container {
+    width: 3em;
+    display: inline-block;
     margin-right: 1em;
-   
+}
+
+.number-container { 
+    width: 3em;
+    height: 3em;
+    background: #3c99c4; 
+    border-radius: 50%;
+    text-align: center;
 }
 
 .number {
     font-family: WorkSans-ExtraBold;
     color: white;
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 .overview-list-container {
     display: inline-block;
-    //display: block; USE THIS IN MOBILE
+    width: 90%;
+    padding-top: .4em;
 }
 
 .overview-list-headline {
@@ -254,17 +264,12 @@ hr {
     width: 80%;
     margin-right: auto;
     margin-left: auto;
-    // position: relative;
 }
 
-// .score-points-left-column-container {
-    // display: inline-block;
-    // width: 50%;
-    // margin-left: 11%;
-    // position: absolute;
-    // top: 50%;
-    // transform: translateY(-50%);
-// }
+.score-points-left-column-container {
+    padding-top: 15%;
+    padding-left: 12%;
+}
 
 .score-points-headline {
     font-family: WorkSans-ExtraBold;
@@ -278,29 +283,113 @@ hr {
     color: dimgray;
 }
 
-// .score-points-phone {
-//     display: inline-block;
-//     width: 29%;
-//     margin-right:0;
-// }
+//------MOBILE STYLING BEGINS HERE------//
 
+@media only screen and (max-width: 900px) {
+    #remove {
+        display: none;
+    }
+        #addimage {
+        display: inline-block;
+    }
 
-//------GETTTING STARTED MOBILE STYLING BEGINS HERE------//
+//------GETTING STARTED MOBILE STYLING BEGINS HERE------//
 
-// @media only screen and (max-width: 900px) {
-//     #remove {
-//         display: none;
-//     }
+    .getting-started-main-container {
+        padding-bottom: .5em;
+    }
+
+    .coming-soon-column-container {
+        width: 95%;
+        text-align: center;
+    }
+
+    .phone-image2  {
+        text-align: center;
+        width:80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .coming-soon-right-column {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 0;
+        padding-top: 10%;
+    }
+
+    .coming-soon-text {
+        font-size: 2em;
+    }
+
+    .coming-soon-p-text {
+        font-size: 1.25em;
+    }
+
+    .email-container input {
+        text-align: center;
+    }
+
+    .subscribe-button {
+        width: 60%;
+    }
+
+    .overview-container {
+        text-align: center;
+    }
+
+    .overview-title {
+        font-size: 2.5em;
+    }
+
+    .full-list-item-container {
+        width: 85%;
+        text-align: center;
+    }
+    .number-line-container {
+        width:100%;
+        height: 3em;
+        text-align: center;
+    }
+
+    .number-container {  
+        display: block;
+        margin: 0 auto;
+    }
+
+    .overview-list-container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .overview-p {
+        margin-bottom: 1.5em;
+    }
+
+    .score-points-full-container {
+        width: 85%;
+    }
+
+    .score-points-left-column-container {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 0;
+    }
+
+    .score-points-headline {
+        font-size: 2.5em;
+    }
     
-    
-    
-// }
+}
 
 //------------VIDEOS PAGE BEGINS HERE------------//
 
 .videos-main-container {
     padding-bottom: 2.5em;
-    background-color: #dedede;
+    background-color: #f2f1f1;
 }
 
 .section-title-container {
